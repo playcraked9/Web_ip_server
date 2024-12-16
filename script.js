@@ -1,4 +1,4 @@
-fetch('https://api.ipify.org?format=json')
+fetch('https://ipinfo.io/json')
     .then(response => response.json())
     .then(data => {
         document.getElementById('ip-address').textContent = `Your IP: ${data.ip}`;
